@@ -7,13 +7,15 @@ public class Student implements Serializable {
     private String age;
     private String gender;
     private String address;
+    int image;
 
 
-    public Student(String name, String age, String gender, String address) {
+    public Student(String name, String age, String gender, String address,int image) {
         this.name = name;
         this.gender = gender;
         this.address = address;
         this.age = age;
+        this.image=image;
 
 
     }
@@ -39,5 +41,8 @@ public class Student implements Serializable {
         return address;
     }
 
-
+public int getImage()
+{
+    return image;
+}
 }

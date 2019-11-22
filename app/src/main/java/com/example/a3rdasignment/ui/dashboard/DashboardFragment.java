@@ -30,6 +30,8 @@ public class DashboardFragment extends Fragment implements RadioGroup.OnCheckedC
     RadioGroup radioGroup;
     String name,gender, age, address;
 
+    int image;
+
     Button submit;
 
     public static List<Student> studentlist = new ArrayList<>();
@@ -56,16 +58,20 @@ public class DashboardFragment extends Fragment implements RadioGroup.OnCheckedC
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         if(checkedId == R.id.Rmale){
             gender = "Male";
+            image= R.drawable.male;
+
 
         }
 
         if(checkedId == R.id.Rfemale){
             gender = "Female";
+            image=R.drawable.female;
 
         }
 
         if(checkedId == R.id.Rother){
             gender = "Other";
+            image=R.drawable.male;
         }
     }
 
@@ -83,7 +89,7 @@ public class DashboardFragment extends Fragment implements RadioGroup.OnCheckedC
             if (validate()) {
 
 
-                studentlist.add(new Student(name, age, gender, address));
+                studentlist.add(new Student(name, age, gender, address,image));
                 Toast.makeText(getActivity(),"Save", Toast.LENGTH_SHORT).show();
 
 

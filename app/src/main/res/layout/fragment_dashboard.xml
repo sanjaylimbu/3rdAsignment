@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -65,7 +68,7 @@
             android:id="@+id/Rmale"
             android:layout_width="215dp"
             android:layout_height="wrap_content"
-            android:checked="true"
+
             android:text="Male" />
 
         <RadioButton
@@ -94,11 +97,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:layout_width="wrap_content"
         android:id="@+id/SaveButton"
         style="@style/loginButton"
         android:text="SAVE"
-        android:layout_gravity="right"
+        android:layout_gravity="center"
         android:layout_marginTop="@dimen/loginViewsMargin"/>
 
 
-</LinearLayout>
+</LinearLayout></ScrollView>

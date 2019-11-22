@@ -42,6 +42,7 @@ public class Stu_Adapter extends RecyclerView.Adapter<Stu_Adapter.ContactsViewHo
         holder.Address.setText(student.getAddress());
         holder.Age.setText(student.getAge());
         holder.Gender.setText(student.getGender());
+        holder.imgProfile.setImageResource(student.getImage());
 
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,12 +61,12 @@ public class Stu_Adapter extends RecyclerView.Adapter<Stu_Adapter.ContactsViewHo
 
     public class ContactsViewHolder extends RecyclerView.ViewHolder{
 
-        CircleImageView imgProfile;
+        ImageView imgProfile;
         TextView Name,Address,Age,Gender;
         ImageView delete;
         public ContactsViewHolder(@NonNull View itemView) {
             super(itemView);
-
+imgProfile=itemView.findViewById(R.id.Profile);
             Name = itemView.findViewById(R.id.fullName);
             Address = itemView.findViewById(R.id.Address);
             Age = itemView.findViewById(R.id.Age);
