@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">3rdAsignment</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Add Student</string>
+    <string name="title_notifications">About Us</string>
+
+
+    <string name="login_email_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+
+    <string name="login_name_hint">Full Name</string>
+
+
+
+</resources>
